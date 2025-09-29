@@ -1,0 +1,46 @@
+[package]
+name = "cinto"
+version = "0.1.0"
+authors = ["Michel Nowak <michelnowak1@gmail.com>"]
+edition = "2024"
+build = "build.rs"
+
+[dependencies]
+rand = "*"
+libc = "0.2.0"
+rayon="*"
+
+numpy = "*"
+ndarray = "0.14"
+ndarray-linalg = { version = "0.13", features = ["openblas-system"] }
+
+base64ct = "=1.6.0"
+serde_json="*"
+indicatif="*"
+console="*"
+colored="*"
+num="*"
+num-traits="*"
+itertools="*"
+libm="*"
+
+petgraph="*"
+
+[build-dependencies]
+cmake = "*"
+built = "*"
+
+[[bin]]
+name = "cinto"
+path="src/bin/main.rs"
+
+[lib]
+name="cinto"
+crate-type=["rlib", "cdylib"]
+
+[dependencies.pyo3]
+version="0.15.0"
+features = [
+"auto-initialize",
+# "extension-module"
+]
