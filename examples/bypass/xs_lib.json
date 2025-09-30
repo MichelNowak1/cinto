@@ -1,0 +1,51 @@
+{
+  "evaluation_type": "multigroup",
+  "isotopes": [
+    {
+      "is_fissile": false,
+      "atomic_mass": 1.0,
+      "energies": [
+        20.0,
+        1e-11
+      ],
+      "fission_xs": [
+        0.0
+      ],
+      "name": "boleft",
+      "scattering_matrix": [
+        [
+          0.1
+        ]
+      ],
+      "scattering_xs": [
+        0.1
+      ],
+      "total_xs": [
+	1.0
+      ]
+    },
+    {
+      "atomic_mass": 1.0,
+      "is_fissile": false,
+      "energies": [
+        20.0,
+        1e-11
+      ],
+      "fission_xs": [
+        0.0
+      ],
+      "name": "TOP",
+      "scattering_matrix": [
+        [
+          0.9
+        ]
+      ],
+      "scattering_xs": [
+        0.9
+      ],
+      "total_xs": [
+        0.1
+      ]
+    }
+  ]
+}
